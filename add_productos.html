@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> -Alura Geek- </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./img/Vector.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/productos_add.css">
+    <link rel="stylesheet" href="./css/flexbox.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/rodapie.css">
+    
+</head>
+<body>
+    <header class="cabezera">
+        <section class="cabezera__principal">
+            <div class="logo">
+                <div class="cabezera__componentes">                    
+                    <a href="./index.html">                    
+                        <img src="./img/Logo.png" alt="AluraGeek">
+                    </a>
+                    <div class="search__box">
+                        <form class="search__principal">
+                            <input type="search" class="search" placeholder="¿Qué deseas buscar?" autocomplete="additional-name">
+                            <button type="submit" class="boton__search"><i class="fa a__search"></i></button> 
+                        </form>        
+                    </div>
+                    <button class="btn__admin" onclick="location.href='./productos.html';">
+                        Menú Administrador
+                    </button>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="formulario">
+        <form action="#" class="formulario__contenedor" data-form>
+            <fieldset>
+                <legend class="title__addProducto">Agregar nuevo producto</legend>
+
+
+                <div class="agregar__form__imagen">
+                    <div class="agregar__imagen-div" id="box__imagen"></div>
+                    <label for="input__imagen" class="input__image-label"> Elegir archivo</label>
+                    <input type="file" class="agregar__imagen input" id="input__imagen" data-input="imagen_agregar_producto" accept="image/*">
+                </div>
+                <div class="falta__carga__archivo">
+                    <span class="mensaje__error archivo__faltante">Debe seleccionar un archivo de imagen para cargar en el producto</span>
+                </div>
+                <!--
+                <label for="formFileLg" class="input-label"></label>
+                <input class="form-control input" id="formFileLg" type="file" required data-tipo="imagen_prod">
+                -->
+                <div class="input__container top__limit">
+                    <input name="categoria" id="categoria" class="input" type="text" placeholder="Categoria" required data-tipo="categoria" pattern="[\s\S]{4,40}">
+                    <label class="input__label" for="categoria"></label>
+                    
+                </div>
+                <div class="input__container">
+                    <input name="nombreProducto" id="nombreProducto" class="input" type="text" placeholder="Nombre del producto" required data-tipo="nombre__prod" pattern="[\s\S]{4,20}">
+                    <label class="input__label" for="nombreProducto"></label>
+                    
+                </div>
+                <div class="input__container">
+                    <input name="precioProducto" id="precioProducto" class="input" type="text" placeholder="Precio del producto" required data-tipo="precio__prod" pattern="([$][0-9]).{1,100}">
+                    <label class="input__label" for="precioProducto"></label>
+                    
+                </div>
+                <div class="input__container">
+                    <input name="descripcionProducto" id="descripcionProducto" class="input__descripcion" type="text" placeholder="Descripción del producto" required data-tipo="descripcion__prod" pattern="[\s\S]{5,150}">
+                    <label class="input__label" for="descripcionProducto"></label>
+                    
+                </div>
+            </fieldset>
+            <button type="submit" class="btn__agregar">Agregar producto</button>
+        </form>
+    </main>
+    <footer>
+        <section class="rodapie">
+            <div class="menu__contacto">
+                <div class="menu__contacto__box">
+                    <div class="menu__contacto__contenido">
+                        <a href="./index.html">                    
+                            <img src="./img/Logo.png" alt="AluraGeek">
+                        </a>
+                    </div>
+                    <ul class="main">
+                            <li class="main__contenedor"><a class="main__link" href="#">Quienes somos</a></li>
+                            <li class="main__contenedor"><a class="main__link" href="#">Política de privacidad</a></li>
+                            <li class="main__contenedor"><a class="main__link" href="#">Programa de fidelidad</a></li>
+                            <li class="main__contenedor"><a class="main__link" href="#">Nuestras Tiendas</a></li>
+                            <li class="main__contenedor"><a class="main__link" href="#">Quiero ser franquiciado</a></li>
+                            <li class="main__contenedor"><a class="main__link" href="#">Anúncie aquí</a></li>
+                    </ul>
+                
+                </div>
+                
+                <div class="contacto">
+                    <form action="#" class="contacto__form">
+                        <fieldset>
+                            <legend class="title__contacto">Hable con nosotros</legend>
+                            <label for="nombre"></label>
+                            <input class="input__nombre" type="text" placeholder="Nombre" required data-tipo="nombre" pattern="[\s\S]{4,40}">
+                            
+                            <label for="mensaje"></label>
+                            <textarea class="input__mensaje" type="text" placeholder="Escribe tu mensaje" required data-tipo="mensaje" pattern="[\s\S]{5,120}"></textarea>
+                        </fieldset>
+                        <button class="btn__contacto">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+                        
+        </section>
+        <div class="rodapie__end">
+            <h4 class="realizado">Desarrollado por gpinto 2023</h4>  
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/search.js"></script>
+    <script type="module" src="./js/validacion_rodapie.js"></script>
+<script type="module" src="./js/add_prod.js"></script>
+</body>
+</html>

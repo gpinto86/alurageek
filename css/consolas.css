@@ -1,0 +1,22 @@
+/*Estilos Css*/
+.consolas{
+    padding-bottom: 16px;
+}
+.consolas__principal{
+    margin: 0 auto;
+    padding: 16px 10%;
+    
+}
+.consolas__descripcion{ 
+    margin: 0 auto;
+    padding: 16px 10%;
+}
+@media screen and (max-width:1280px){
+    .consolas__principal{
+        padding: 16px 5%;
+        
+    }
+    .consolas__descripcion{ 
+        padding: 16px 5%;
+    }
+}

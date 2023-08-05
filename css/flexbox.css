@@ -1,0 +1,142 @@
+/*Flexbox*/
+/*headers*/
+.cabezera .cabezera__principal{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.logo .btn__login{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo .cabezera__componentes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cabezera .banner__promocional{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.banner__promocional__text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+/*main*/
+.productos__sw .sw__principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.productos__sw .productos__descripcion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+.consolas .consolas__principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.consolas .consolas__descripcion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+.diversos .diversos__principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.diversos .diversos__descripcion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+/*Footer*/
+.rodapie .menu__contacto{
+    display: flex;
+    justify-content: space-between;
+}
+.menu__contacto .menu__contacto__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.menu__contacto__box .menu__contacto__contenido{
+    display: flex;
+}
+.menu__contacto__box .main{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.menu__contacto .contacto{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    
+}
+
+@media screen and (max-width:768px){
+    .menu__contacto .menu__contacto__box {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:360px){
+    .productos__descripcion{
+        min-height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .productos__descripcion .bloque__principal{
+        display: flex; 
+        flex-basis: calc(50% - 10px);  
+        justify-content: center;
+        flex-direction: column;
+    }
+    .consolas__descripcion{
+        min-height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .consolas__descripcion .bloque__principal {
+        display: flex; 
+        flex-basis: calc(50% - 10px);  
+        justify-content: center;
+        flex-direction: column;
+    }
+    .diversos__descripcion{
+        min-height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .diversos__descripcion .bloque__principal {
+        display: flex; 
+        flex-basis: calc(50% - 10px);  
+        justify-content: center;
+        flex-direction: column;
+    }
+    .rodapie .menu__contacto{
+        flex-direction: column;
+    }
+    .menu__contacto .menu__contacto__box{
+        align-items: center;
+    }
+    .menu__contacto__box .main{
+        align-items: center;
+        padding-bottom: 16px;
+    }
+    .menu__contacto__box .menu__contacto__contenido {
+        padding-bottom: 16px;
+    }
+}

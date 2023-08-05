@@ -1,0 +1,25 @@
+
+/*Estilos Css*/
+.diversos{
+    padding-bottom: 16px;
+}
+.diversos__principal{
+    margin: 0 auto;
+    padding: 16px 10%;
+    
+}
+.diversos__descripcion{ 
+    margin: 0 auto;
+    padding: 16px 10%;
+    
+}
+@media screen and (max-width:1280px){
+    .diversos__principal{
+        padding: 16px 5%;
+        
+    }
+    .diversos__descripcion{ 
+        padding: 16px 5%;
+        
+    }
+}
